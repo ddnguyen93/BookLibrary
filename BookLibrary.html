@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Reading Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <h1>My Reading Journal</h1>
+    <div class = "main">
+        <div>
+            <table class = "libraryList">
+                <thead>
+                    <tr>
+                        <th style = "width:200px">Title</th>
+                        <th style = "width:200px">Author</th>
+                        <th style = "width:150px">Pages</th>
+                        <th style = "width:150px">Status</th>
+                        <th style = "width:100px"><input type="checkbox" id="selectAll" onclick="selectAll()"></th>
+                    </tr>
+                </thead>
+                <tbody id = "tableContent">
+                </tbody>
+            </table>
+        </div>
+        <div class = "inputArea">
+            <form id = "inputSection">
+                <label>Title</label>
+                <input type = "text" id= "title" name="title" required>
+                <label>Author</label>
+                <input type = "text" id= "author" name="author" required>
+                <label>Pages</label>
+                <input type = "text" id= "pages" name="pages" required>
+                <label>Status</label>
+                <select id = "status">
+                    <option>Not Started</option>
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                </select>
+            </form><br>
+            <button type = "button" onclick = "addBookToLibrary()" class = "inputButton">Submit</button><br>
+            <button type = "button" onclick = "deleteBook()" class = "inputButton">Delete</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

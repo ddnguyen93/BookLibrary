@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(137, 240, 231);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    font-size: 50px;
+}
+
+.main {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 3fr 2fr;
+}
+
+.libraryList {
+    background-color:rgb(243, 226, 204);
+    border-style: solid;
+    border-color: black;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 30px;
+}
+
+.inputArea {
+    display: grid;
+    grid-template-rows: 200px 10px 50px 10px 50px;
+}
+
+#inputSection {
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 11px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px 50px 50px;
+    max-width: 500px;
+    margin-left: 0px;
+    border: 1px solid black;
+}
+
+label {
+    vertical-align: center;
+    line-height: 50px;
+    font-size: 1.5em;
+}
+
+.inputButton {
+    width: 200px;
+    margin-left: 175px;
+}
+
+tr {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
